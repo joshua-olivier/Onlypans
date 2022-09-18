@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="payment.js"></script>
+
+    <title>OnlyFans</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <img src="Onlypans.png" alt="Logo">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+    <!--Loader-->
+    <div class="windows8">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!--Displays the informations/text after the loader-->
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <h1 class="add-to-cart-heading">Your payment has been sent to an automated bot!</h1>
+            <br>
+            <br>
+            <p><button onclick="document.location='final-page.html'" class="button button5">Next</button></p>
+            <br>
+            <br>
+            <p class="under-h1">Note: The prices of those pans range from $20 to 80$, so you'll have to put a certain
+                amount
+                of money, it could be from $0 - $1M or even more. With a keyboard, use Ctrl+Shift+I
+                (Windows)/Command+Option+I (Mac)
+                to open the inspection tool and as you open it, click on console. You'll see a mini bot telling you
+                whether you
+                have enough money or not! As the payment gets accepted, the button "next" will direct towards a final
+                page. <u>It is possible that the bot may encounter some issues on your first try!</u>
+            </p>
+        </div>
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Navigation bar*/
+nav {
+    width: 100%;
+    background-color: #ABC5FF;
+    ;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: #ABC5FF;
+}
+
+/*logo-position*/
+.logo {
+    display: inline-block;
+}
+
+
+/*logo image size*/
+.logo img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+/*Image width*/
+img {
+    width: 75px;
+}
+
+/*Loader position in webpages*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #ABC5FF;
+    ;
+    ;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/*Loader animation*/
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+/*Title of the website (OnlyPans)*/
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-left: 3px;
+    margin-right: 3px
+}
+
+/*first Image from the homepage */
+.first {
+    height: auto;
+    width: 100%;
+    margin-top: -2.5pc;
+}
+
+/*First section of the home-page*/
+.section-1 {
+    font-size: 17px;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+/*Second section of the home-page*/
+.section-2 {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*Mini-text of second section in the homepage*/
+.undertext-sct2 {
+    text-align: left;
+    margin-left: 4.5pc;
+    margin-right: 4.5pc;
+    line-height: 2;
+}
+
+/*Cooking pan image size*/
+.cooking-pan {
+    width: 50%;
+}
+
+/*Third section from Homepage*/
+.section-3 {
+    font-size: 19px;
+    text-align: left;
+    margin-left: 4.5pc;
+    font-weight: bold;
+}
+
+/*Product card*/
+.card {
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    margin: 2%;
+    text-align: center;
+    background-size: contain;
+}
+
+/*Button from product card*/
+.button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: unset;
+
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.button5:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/*Add to cart text from product card*/
+.add-to-cart-heading {
+    text-align: center;
+}
+
+/*Disclaimer text alignement*/
+.disclaimer {
+    text-align: center;
+}
+
+/*disclaimer paragraph*/
+.dsc-paragraph {
+    text-align: left;
+    margin-left: 4.5pc;
+    margin-right: 4.5pc;
+    line-height: 2;
+}
+
+/*Icon position and size*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/*social media icons*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #3e7bff;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-twitch {
+    background: #2c4762;
+    color: white;
+}
+
+/*text*/
+.under-description {
+    margin-left: 4.5pc;
+    margin-right: 4.5pc;
+    text-align: left;
+}
+
+/*underline*/
+u {
+    color: #ABC5FF;
+}
+
+/*text that is under the first heading*/
+.under-h1 {
+    text-align: left;
+    font-size: 17px;
+    margin-left: 4.5pc;
+    margin-right: 4.5pc;
+    line-height: 2;
+}
+
+/*Final Page section*/
+.fp-section {
+    text-align: center;
+    font-size: 35px;
+}
+
+/*First text from the final page*/
+.fp-text1 {
+    font-size: 25px;
+}
+
+/*GIF image*/
+.pepe {
+    width: 40%;
+}
+
+/*Second text from the final page*/
+.fp-text2 {
+    font-size: 25px;
+}

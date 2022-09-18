@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="add-to-cart.js"></script>
+
+    <title>OnlyFans</title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <img src="Onlypans.png" alt="Logo">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+    
+    <!--Loader-->
+    <div class="windows8">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!--Displays the information after the loader-->
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <h1 class="add-to-cart-heading">It's now added in your cart. Click the button to proceed the payment!</h1>
+            <br>
+            <br>
+            <p><button onclick="document.location='payment.html'" class="button button5">Pay Now</button></p>
+        </div>
+    </body>
+</body>
+</html>
