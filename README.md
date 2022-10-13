@@ -1,4 +1,4 @@
-# Onlypans-website
+# Onlypans
 == Description ==
 
 OnlyPans is a modified clone of the original website OnlyFans. 
